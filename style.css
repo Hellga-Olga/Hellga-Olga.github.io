@@ -43,7 +43,7 @@ body {
     
     .main-container {
         display: grid;
-        grid-template-rows: 20% 80%;
+        grid-template-rows: auto auto;
         grid-template-columns: 100%;
     }
     
