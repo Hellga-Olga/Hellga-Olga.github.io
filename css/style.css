@@ -29,12 +29,13 @@ body {
     }
 
     .project {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 150px;
         height: 150px;
         margin: 10px;
         text-align: center;
-        line-height: 150px;
     }
 
 }
@@ -83,12 +84,13 @@ body {
     }
 
     .project {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100px;
         height: 100px;
         margin: 5px;
         text-align: center;
-        line-height: 100px;
     }
 
     .project-link {
@@ -173,12 +175,24 @@ ul {
     background-color:cornflowerblue;
 }
 
+.pr-1:hover {
+    background-color:#7ca7f1;
+}
+
 .pr-2 {
-    background-color: darkorange;
+    background-color: #ed9324;
+}
+
+.pr-2:hover {
+    background-color: #f6ac51;
 }
 
 .pr-3 {
-    background-color: greenyellow;
+    background-color: #a4ed37;
+}
+
+.pr-3:hover {
+    background-color: #bbee6f;
 }
 
 .project-link {
