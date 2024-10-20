@@ -16,11 +16,61 @@ body {
     #ubuntu-summit-logo {
         display: none;
     }
+
+    .banner-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px 0 24px;
+        line-height: 24px;
+    }
+
+    .large-header {
+        font-size: 30px;
+        font-weight:400;
+        text-wrap: pretty;
+        line-height: 48px;
+        padding-top: 9.9px;
+        margin-bottom: 17.1px;
+    }
+
+    .medium-header {
+        padding-top: 8.8px;
+        margin-bottom: 15.2px;
+        font-size: 30px;
+        font-weight:lighter;
+        line-height: 48px;
+    }
 }
 
 @media (min-width: 1161px) {
     .right .narrow {
         display: none;
+    }
+
+    .banner-2 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 286.6px;
+        column-gap: 32px;
+        padding: 0 24px 0 24px;
+        line-height: 24px;
+    }
+
+    .large-header {
+        font-size: 40px;
+        font-weight:400;
+        text-wrap: pretty;
+        line-height: 48px;
+        padding-top: 9.9px;
+        margin-bottom: 17.1px;
+    }
+
+    .medium-header {
+        padding-top: 8.8px;
+        margin-bottom: 15.2px;
+        font-size: 40px;
+        font-weight:lighter;
+        line-height: 48px;
     }
 
 }
@@ -47,18 +97,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    grid-column-end: span 3;
     font-family: "Ubuntu", sans-serif;
     font-size: 20.8px;
     font-weight: 300;
-    width: auto;
+    width: 188.86px;
 }
 
 .navigation-tagged-logo {
     line-height: 24px;
 }
 
-.navigation-link {
+.navigation-logo-link {
     display: block;
     text-decoration: none;
     color: white;
@@ -83,36 +132,30 @@ body {
 }
 
 #logo-title {
+    display: inline-block;
     position: relative;
     left: 25px;
 }
 
 .navigation-section {
     display: grid;
-    grid-column: 4/13;
+    grid-column: 3/13;
     grid-row: 1;
     grid-template-columns: repeat(9, auto);
     grid-template-rows: auto;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     font-weight: 350;
-    /* padding-top: 16px; */
     margin-right: -16px;
 }
 
 
 .center {
-    /* display: block; */
-    /* flex-direction: row; */
-    /* justify-content:space-between; */
     grid-row: 1;
     grid-column: 1/5;
 }
 
 .right {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: right; */
     grid-row: 1;
     grid-column: 7/9;
 }
@@ -158,9 +201,8 @@ body {
 
 .main {
     display: block;
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
-    /* padding: 0 27px 0 27px; */
     font-family: "Ubuntu", sans-serif;
     color: white;
 }
@@ -185,14 +227,7 @@ body {
     padding-bottom: 27px;
 }
 
-.large-header {
-    font-size: 40px;
-    font-weight:400;
-    text-wrap: pretty;
-    line-height: 48px;
-    padding-top: 9.9px;
-    margin-bottom: 17.1px;
-}
+
 
 .hero-text-area > p {
     font-size: 16px;
@@ -207,7 +242,7 @@ body {
     font-weight: 400;
     height: 0.5px;
     margin: 0 0 8px 0;
-    width: 610px;
+    max-width: 610px;
     background-color: #ffffff1a;
     border: none;
 }
@@ -269,7 +304,7 @@ body {
 
 .banner-1 {
     display:block;
-    background-image: url('../static/data_icon.svg');
+    background-image: url(../static/data_icon.svg);
     background-origin: padding-box;
     background-position-x: 16px;
     background-position-y: 18px;
@@ -309,19 +344,10 @@ body {
     font-size: 16px;
     height: 1px;
     line-height: 24px;
-    width: 1232px;
     margin-bottom: 8px;
     margin-top: 0;
 }
 
-.banner-2-row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 286.6px;
-    column-gap: 32px;
-    padding: 0 24px 0 24px;
-    line-height: 24px;
-}
 
 .banner-2-content {
     grid-column-start: 1;
@@ -330,14 +356,6 @@ body {
 
 .text-area {
     padding-bottom: 24px;
-}
-
-.medium-header {
-    padding-top: 8.8px;
-    margin-bottom: 15.2px;
-    font-size: 40px;
-    font-weight:lighter;
-    line-height: 48px;
 }
 
 .button-container {
